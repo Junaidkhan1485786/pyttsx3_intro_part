@@ -36,3 +36,23 @@ Volume Control: The volume of the speech can also be adjusted.
 Events: You can attach event listeners to get callbacks when the speech starts, ends, or encounters an error.
 Example with Voice Selection
 Here’s a more advanced example demonstrating voice selection and event handling:
+ bash ```
+ import pyttsx3
+
+def onStart(name):
+    print(f'Speech started for {name}')
+
+def onEnd(name, completed):
+    print(f'Speech ended for {name}. Completed: {completed}')
+
+engine = pyttsx3.init()
+engine.connect('started-utterance', onStart)
+engine.connect('finished-utterance', onEnd)
+
+# Choose a voice
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[0].id)  # Change index for different voices
+
+engine.say("This is an example of text to speech with pyttsx3.")
+engine.runAndWait()
+```
