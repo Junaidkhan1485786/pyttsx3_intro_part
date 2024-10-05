@@ -34,3 +34,5 @@ Adjustable Speech Rate: The speed of the speech can be modified using the setPro
 Volume Control: The volume of the speech can also be adjusted.
 
 Events: You can attach event listeners to get callbacks when the speech starts, ends, or encounters an error.
+Example with Voice Selection
+Here’s a more advanced example demonstrating voice selection and event handling:
