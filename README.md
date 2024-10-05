@@ -3,3 +3,7 @@ pyttsx3 is a Python library that allows you to convert text to speech (TTS). It 
 Installation
 You can install pyttsx3 using pip:
 pip install pyttsx3
+
+
+Basic Usage
+Here’s a simple example of how to use pyttsx3 to convert text to speech:
