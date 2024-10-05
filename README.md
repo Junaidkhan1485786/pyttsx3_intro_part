@@ -26,3 +26,4 @@ engine.say(text)
 engine.runAndWait()
 
 Key Features
+Voice Control: You can change the voice to male or female, depending on the voices installed on your system.
