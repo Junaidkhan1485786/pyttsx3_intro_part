@@ -29,3 +29,8 @@ Key Features
 Voice Control: You can change the voice to male or female, depending on the voices installed on your system.
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)  # Set to female voice (usually index 1)
+Adjustable Speech Rate: The speed of the speech can be modified using the setProperty method.
+
+Volume Control: The volume of the speech can also be adjusted.
+
+Events: You can attach event listeners to get callbacks when the speech starts, ends, or encounters an error.
