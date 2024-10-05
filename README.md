@@ -27,3 +27,5 @@ engine.runAndWait()
 
 Key Features
 Voice Control: You can change the voice to male or female, depending on the voices installed on your system.
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[1].id)  # Set to female voice (usually index 1)
